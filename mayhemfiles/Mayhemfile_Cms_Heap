@@ -1,0 +1,6 @@
+project: pdatastructs
+target: cms-heap
+duration: 90
+
+cmds:
+    - cmd: /cms_heap

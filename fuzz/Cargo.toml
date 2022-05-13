@@ -1,0 +1,50 @@
+[package]
+name = "pdatastructs-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+rand_chacha = "0.3.1"
+
+[dependencies.pdatastructs]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "count_min_sketch"
+path = "fuzz_targets/count_min_sketch.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "lossy_counter"
+path = "fuzz_targets/lossy_counter.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "cms_heap"
+path = "fuzz_targets/cms_heap.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "hyper_log_log"
+path = "fuzz_targets/hyper_log_log.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "reservoir_sampling"
+path = "fuzz_targets/reservoir_sampling.rs"
+test = false
+doc = false

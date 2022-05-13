@@ -1,0 +1,6 @@
+project: pdatastructs
+target: hyper-log-log
+duration: 90
+
+cmds:
+    - cmd: /hyper_log_log

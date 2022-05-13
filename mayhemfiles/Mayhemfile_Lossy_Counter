@@ -1,0 +1,6 @@
+project: pdatastructs
+target: lossy_counter
+duration: 90
+
+cmds:
+    - cmd: /lossy_counter

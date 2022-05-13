@@ -1,0 +1,6 @@
+project: pdatastructs
+target: reservoir-sampling
+duration: 90
+
+cmds:
+    - cmd: /reservoir-sampling

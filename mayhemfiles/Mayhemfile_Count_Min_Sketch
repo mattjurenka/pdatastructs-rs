@@ -1,0 +1,6 @@
+project: pdatastructs
+target: count-min-sketch
+duration: 90
+
+cmds:
+    - cmd: /count_min_sketch
